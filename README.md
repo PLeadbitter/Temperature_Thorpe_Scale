@@ -4,7 +4,7 @@ Produced on MatLab version R2017b
 
 These scripts were produced as part of my Ph.D work and will require modification if another user wishes to make them compatible with their setup. The main changes will be creating the correct pathing for the files and making sure that all the scripts can "see" each other within the matlab working directory.
 
-A break down of the methodology used in my thesis can be seen here: https://ueaeprints.uea.ac.uk/id/eprint/89987/1/PL%20Final%20PhD%20thesis.pdf. A key image, found on page 28 shows the process that the scripts in this repositary need to be run in.
+A break down of the methodology used in my thesis can be seen here: https://ueaeprints.uea.ac.uk/id/eprint/89987/1/PL%20Final%20PhD%20thesis.pdf. A key image, found on page 28 shows the process that the scripts in this repositary need to be run in. The image is also included as a pdf in this level of the directory under Flow_chart_method.pdf
 
 A modified version of these methods can be found here: https://os.copernicus.org/articles/19/77/2023/
 
