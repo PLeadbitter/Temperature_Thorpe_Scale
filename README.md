@@ -6,7 +6,7 @@ These scripts were produced as part of my Ph.D work and will require modificatio
 
 A break down of the methodology used in my thesis can be seen here: https://ueaeprints.uea.ac.uk/id/eprint/89987/1/PL%20Final%20PhD%20thesis.pdf. A key image, found on page 28 shows the process that the scripts in this repositary need to be run in.
 
-A modified version of these methods can be found here: 
+A modified version of these methods can be found here: https://os.copernicus.org/articles/19/77/2023/
 
 The collection consists of 4 different directories each that has a different purpose. Please see the README's in each directory for an indepth explination of each file. A brief overview is given below.
 
