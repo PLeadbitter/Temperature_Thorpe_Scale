@@ -10,3 +10,6 @@ Converting_pressure_depth.m : This is a simple script that turns the pressure fr
 Convert_temp_cons_temp.mat : This is a stand alone script that needs to be done before doing part iii but is seperate from part ii. This is another simple script that loads in the temperature data and converts it to conservative temperature. This isn't necessary for the Thorpe scaling but useful if you want to use the high resolution temperature for other analysis. 
 
 Part iii
+Filtering_to_100hz.m : Due to the response time of the FP07 fast thermistor there is a chance that not all measuresments will be independent of each other. To remove as many spurious overturns as possible the data is filtered to remove any variation below 100hz, whih is the reponse time of this particular sensor.
+
+Binning_temperature_seaglider.m : As with the filtering above we want to try and minimise the number of overturns picked up that aren't real. In addition to filtering we aim to minimise these buy removing points that would not be independent of each other based on the fall rate and angle of the platform through the water. This script is written to take into account the seaglider path through the water. In the section following the data load in there is a section of the code commented out. To use profiler data un-comment this and comment the trigonometry based pitch calculations.  
