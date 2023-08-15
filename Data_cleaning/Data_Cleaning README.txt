@@ -5,7 +5,7 @@ To make best use of the scripts in this directory please run the scripts in bloc
 Part ii
 Converting_pressure_depth.m : This is a simple script that turns the pressure from the raw data into depth. As Thorpe scaling is calculated over a distance we need to have the depth of the instrument and not the pressure. 
 
-
+Calculating_pressure_offsets.m : This script is used to calculate the pressure offset between the Seaglider pressure sensor and the microstructure probes on the Seaglider fairing. This step is not the most important and only vital if sub metre positioning of the data is required. Otherwise a simple constant offset can be applied.
 
 Convert_temp_cons_temp.mat : This is a stand alone script that needs to be done before doing part iii but is seperate from part ii. This is another simple script that loads in the temperature data and converts it to conservative temperature. This isn't necessary for the Thorpe scaling but useful if you want to use the high resolution temperature for other analysis. 
 
