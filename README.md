@@ -17,5 +17,6 @@ Data_cleaning : This directory contains scripts that clean the raw data through 
 Thorpe_Scaling : Tales the data structures created in the above directories and calculates a number of scientificly useful variables for the ocean mixing communities that need them
 
 Functions : This directory contains a number of small functions that are called throughout the other scripts here. They are in a seperate folder to keep things tidy. 
+Also required is the Gibbs Seawater Tool box (GSW, https://www.teos-10.org/software.htm). The version used for this project was 3.0 (current version 3.06)
 
 The scripts here need to be run as seperate scripts in certain orders, work is being done (when I have the time to slim the front end down so that some of these scripts can be run in batches to improve the user experience.
