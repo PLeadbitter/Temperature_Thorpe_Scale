@@ -1,0 +1,5 @@
+Functions README
+
+This directory contains all the functions that I have written that exist within the other scripts in this repository. If there is an issue due to missing functions please let me know. 
+
+As mentioned in the main readme there are a number of other functions required from the Gibbs Seawater Tool box (GSW, https://www.teos-10.org/software.htm) which you will be required to download. The version used for this project was 3.0 (current version 3.06)
