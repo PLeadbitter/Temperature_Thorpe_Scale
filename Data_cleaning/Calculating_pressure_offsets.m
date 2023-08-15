@@ -131,68 +131,6 @@ for ii = prof_min:prof_max
     toc
 end
 
-%% Compare the two methods so that one can be picked 
-% plot a statistically show the options using a linear regression. This in
-% formation can then be used to pick one of the two methods to use
-    
-    profile_offset = 9;
-
-for ii = prof_min:prof_max
-    
-    % define variables
-    eval(['x = corrected_z_fast_corr_up.profile' num2str(ii,'%03d') ';'])
-    eval(['y = corrected_z_fast_os_up.profile' num2str(ii,'%03d') ';'])
-
-    % check for nans and remove, then make sure that the profiles are the
-    % same length
-    x(isnan(x)) = [];
-    y(isnan(y)) = [];
-    
-    length_check = mod(length(x)-length(y),2);
-    
-    if length_check == 0
-    
-    else
-    error('Different number of NaNs removed')
-    end
-
-    % Calculate gradient and y intercept of the lines 
-    X = [ones(length(x),1) x];
-    beta_1 = X\y; 
-    linear_equ(ii - profile_offset,1) = beta_1(1);
-    linear_equ(ii - profile_offset,2) = beta_1(2);
-
-    clear x y X length_check
-
-end
-    
-    % profile numbers to plot against
-    profile_num = [prof_min:prof_max]';
-    
-    % calculate median and create a plotable vector
-    mead_y_int = [1:25]';
-    mead_y_int(:) = median(linear_equ(:,1));
-    
-    % plot up y_intercepts and the median value
-    
-    close
-    
-    f1 = figure('Position',[50,100,800,600],'Units','normalized');
-    ax1 = axes('Position',[0.09 0.12 0.8 0.82]);
-    plot(profile_num,linear_equ(:,1),'k-*','LineWidth',2);
-    hold on
-    plot(profile_num,mead_y_int,'r--','LineWidth',2)
-        grid on
-        xlim([9 35]); ylim([-5.5e-3 1e-3]);
-        ylabel('Y Intercept [m]','FontSize',16)
-        xlabel('Profile Number','FontSize',16)
-
-        legend('Y Intercept [m]','Median','Location','NorthEast')
-
-         set(f1,'Renderer','Painter')
-
-
-
 
 
 
